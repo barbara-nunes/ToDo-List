@@ -1,0 +1,112 @@
+.wrapper {
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+
+}
+
+.logo{
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center; 
+    padding: 1.25rem 0;
+}
+
+.textArea {
+    width: 50%;
+    background: var(--gray-500);
+    border: 0;
+    resize: none;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 8px;
+    color: var(--gray-300);
+    line-height: 1.4;
+    font-weight: bold;
+  
+    
+}
+
+.button {
+    background: var(--blueDark);
+    height: 50px;
+    padding: 0 1rem;
+    border-radius: 8px;
+    color: var(--gray-200);
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.taskForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.line {
+    background: var(--gray-200);
+    justify-content: center;
+   
+}
+
+.completedTasks {
+    color: var(--purple);
+}
+
+.infos {
+    display:flex;
+    justify-content:center;
+    margin-top: 3rem;
+    align-items:center;
+    gap: 40%;
+    resize: none;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.wrapper section {
+    margin-bottom: 40px;
+}
+
+#checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    font-size: 18px;
+    color: var(--blueDark);
+    cursor: pointer;
+}
+
+.checkbox-label::before {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    box-sizing: border-box;
+    border: 2px solid var(--gray-100);
+    border-radius: 2px;
+    margin-right: 5px;
+    background-color: var(--gray-100);
+}
+
+#checkbox:checked + .checkbox-label::before {
+background-color: var(--purpleDark);
+}
+
+
