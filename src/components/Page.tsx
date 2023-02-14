@@ -72,20 +72,25 @@ function handleDeleteTask(taskToDelete:string) {
 
        
         </> :
+         <>
+          <hr className={stylesPage.line}/>
 
-        <div className={stylesTask.infoBox}>
-            <header className={stylesTask.icone}>
-                <img src={icone} alt="Icone Lista" />
-            </header>
+<div className={stylesTask.infoBox}>
+  
+    <header className={stylesTask.icone}>
+        <img src={icone} alt="Icone Lista" />
+    </header>
 
-            <h1 className={stylesTask.textOne}>
-                Você ainda não tem tarefas cadastradas
-            </h1>
+    <h1 className={stylesTask.textOne}>
+        Você ainda não tem tarefas cadastradas
+    </h1>
 
-                <h3 className={stylesTask.textTwo}>
-                   Crie tarefas e organize seus itens a fazer
-                </h3>
-        </div>
+        <h3 className={stylesTask.textTwo}>
+           Crie tarefas e organize seus itens a fazer
+        </h3>
+</div>
+</>
+         
     )
   }
 
@@ -115,18 +120,19 @@ function handleDeleteTask(taskToDelete:string) {
 
     <div className={stylesPage.infos}>
         <strong className={stylesPage.task}>
-          Tarefas Criadas 5
+          Tarefas Criadas <span className={stylesPage.tasksCreated}>5</span>
           </strong>
           
+          
         <strong className={stylesPage.completedTasks}>
-          Concluídas <p>6</p>
+          Concluídas <span className={stylesPage.completedTasksValue}>2 de 5</span> 
           </strong>
 
          
 
     </div>
 
-    <hr className={stylesPage.line}/>
+  
 
        
        
